@@ -1,9 +1,10 @@
 
 /*Profile page*/
 .profile--details {
-    border: 1px dotted darkblue;
+    border: 5px dotted darkblue;
     padding: 20px;
     margin: auto;
+    background-color: white;
 }
 
 #profileImg {
@@ -19,6 +20,12 @@
 
 .email {
     display: none;
+}
+
+.location {
+    border: none;
+    margin: 0;
+    padding: 0;
 }
 
 

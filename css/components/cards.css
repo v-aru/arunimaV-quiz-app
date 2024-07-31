@@ -1,0 +1,97 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+
+.question-cards {
+    align-self: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 0 0 0 0;
+    padding: 50px 0px;
+}
+
+.card {
+    margin: 20px;
+    position: relative;
+    border-radius: 20px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 2px solid black;
+}
+
+h4  {
+    display: block;
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom:0;
+  }
+
+.answer {
+    display: none;
+}
+.hide-answer {
+    display: none;
+  }
+
+
+.list-tags {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.list-item-tags {
+    padding: 5px;
+    background-color: cornflowerblue;
+    color: black;
+    border-radius: 10px;
+}
+
+/*
+  .answer {
+    display: block;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+    */
+
+.bookmark img {
+    width: 30px;
+    height: 30px;
+}
+
+
+.bookmark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 30px;
+    height: 30px;
+    transition: 0.3s;
+    transform: translate(-50%, -20%);
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    border: none;
+    cursor: pointer;
+}
+
+.bookmark.bookmark--active,
+.bookmark.bookmark:hover,
+.bookmark.bookmark:focus {
+  color: #1c56ad;
+}

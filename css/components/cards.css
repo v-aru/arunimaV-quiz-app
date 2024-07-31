@@ -91,7 +91,7 @@ h4  {
 }
 
 .bookmark.bookmark--active,
-.bookmark.bookmark:hover,
-.bookmark.bookmark:focus {
+.bookmark:hover,
+.bookmark:focus {
   color: #1c56ad;
 }

@@ -1,5 +1,8 @@
 header {
     align-content: center;
+    display: flex;
+    
+    
 }
 
 h1 {
@@ -9,9 +12,9 @@ h1 {
     font-size: 3em;
     width: auto;
     margin: 20px ;
-    text-shadow: 4px 4px darkgreen;
-    position: absolute;
     top: 0;
     left: 10px;
     right:10px;
+    text-shadow: 4px 4px darkgreen;
+    position: absolute;
 }

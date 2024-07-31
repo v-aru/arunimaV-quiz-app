@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-
+/*
 const imageElement = document.getElementById('myImage');
 const image1 = 'images/bookmark_filled.png' ;
 const image2 = 'images/bookmark_transparent.png';
@@ -53,3 +53,13 @@ const image2 = 'images/bookmark_transparent.png';
 imageElement.addEventListener('onclick', () => {
   imageElement.src = imageElement.src === image1 ? image2 : image1;
 });
+
+ #container {
+    display: block;
+    flex-flow: column wrap;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0px 20px;
+  }
+*/

@@ -10,6 +10,9 @@ body {
     padding: 50px;
     font-family: sans-serif;
     background-color: lightcyan;
+    background-image: url('../images/quizbackground.png');
+    background-size: fit;
+
 }
 
 .main-content {

@@ -1,29 +1,40 @@
 
 /*Profile page*/
+.profile--card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile--intro {
+    border: 5px dotted darkblue; 
+}
+
+p {
+    text-align: justify;
+    /*border: 1px solid;*/
+    padding: 10px;
+}
+
 .profile--details {
-    border: 5px dotted darkblue;
-    padding: 20px;
     margin: auto;
-    background-color: white;
+    padding: 10px;
+
 }
 
 #profileImg {
-    border-radius: 30%;
+    border-radius: 40%;
     width: 200px;
     height: 150px;
-
 }
 
-.dob {
-    display: none;
-}
-
-.email {
-    display: none;
+.profile--contact {
+    display: flex;
+    justify-content: space-around;
 }
 
 .location {
-    border: none;
     margin: 0;
     padding: 0;
 }
@@ -39,4 +50,5 @@
     margin: 0;
   }
   
- 
+
+

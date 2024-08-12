@@ -1,3 +1,6 @@
+
+/* Show/Hide Answer button*/
+
 .show-answer, .hide-answer {
     display: flex;
     position: relative;
@@ -24,7 +27,8 @@
     position: absolute;
     width: 200px;
     height: 200px;
-    background:  #2bb554;
+    background:  #cba3e2;
+    color: aliceblue;
     transition: 0.4s;
     z-index: 0;
     border-radius: 500px;
@@ -34,7 +38,43 @@
     transform: translate(-50%, -50%) scale(0);
 }
 
-  .show-answer:hover:before , .hide-answer:hover:before {
-    opacity: 0.5;
-    transform: translate(-50%, -50%) scale(1);
-  }
+.show-answer:hover:before , .hide-answer:hover:before {
+  opacity: 0.5;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* Bookmark Button*/
+
+.add-to-bookmark {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+  position: absolute;
+  top: -1px;
+  right: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+/*transition: 0.3s;
+  transform: translate(-50%, -20%); 
+}
+  */
+
+.add-to-bookmark i {
+  transition: color 1s ease;
+}
+
+
+.add-to-bookmark.filled i {
+  color: rgb(30, 48, 80); 
+}
+
+
+.add-to-bookmark.filled {
+color: #1e3050;
+}
+
+.add-to-bookmark:hover, .add-to-bookmark:focus {
+  color: #02a7f3;
+}

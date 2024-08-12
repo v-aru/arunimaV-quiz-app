@@ -70,28 +70,6 @@ h4  {
   }
     */
 
-.bookmark img {
-    width: 30px;
-    height: 30px;
-}
 
 
-.bookmark {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    width: 30px;
-    height: 30px;
-    transition: 0.3s;
-    transform: translate(-50%, -20%);
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    border: none;
-    cursor: pointer;
-}
 
-.bookmark.bookmark--active, .bookmark:hover, .bookmark:focus {
-  color: #2d9f42;
-}

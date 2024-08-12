@@ -1,5 +1,11 @@
 
 /*Profile page*/
+.profile--page {
+  margin: 0;
+    margin: 50px;
+    padding: 50px;
+}
+
 .profile--card {
     display: flex;
     flex-direction: column;
@@ -8,7 +14,7 @@
 }
 
 .profile--intro {
-    border: 5px dotted darkblue; 
+    border: 5px dotted var(--background-color); 
 }
 
 p {
@@ -38,17 +44,5 @@ p {
     margin: 0;
     padding: 0;
 }
-
-
-/*Bookmarks page*/
-.question-cards {
-    display: block;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
-    padding: 50px 0px;
-    margin: 0;
-  }
-  
 
 

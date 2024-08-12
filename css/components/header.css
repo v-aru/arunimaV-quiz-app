@@ -7,7 +7,7 @@ header {
 
 h1 {
     text-align: center;
-    background-color: darkblue;
+    background-color: var(--background-color);
     color: lightseagreen;
     font-size: 3em;
     width: auto;

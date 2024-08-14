@@ -55,6 +55,7 @@
     align-self: center;
     height: 40px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    background-color: white;
 }
 
 /*
@@ -79,6 +80,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: rgb(85, 26, 139);
 }
 
 .navigation--item i {

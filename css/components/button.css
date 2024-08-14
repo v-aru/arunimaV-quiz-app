@@ -1,4 +1,4 @@
-
+/* --------------------------------------------------- */
 /* Show/Hide Answer button*/
 
 .show-answer, .hide-answer {
@@ -43,6 +43,7 @@
   transform: translate(-50%, -50%) scale(1);
 }
 
+/* --------------------------------------------------- */
 /* Bookmark Button*/
 
 .add-to-bookmark {

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+        <title>Recap Project : QuizApp </title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    </head>
+    <body>
+        <!--============ HEADER WITH THE NAME QUIZ APP =============-->
+        <header class="page-header">
+            <h1>FORM 📝</h1>
+        </header>
+        <!--============ MAIN SECTION WITH QUIZ CARDS =============-->
+        <main class="form--page">
+            <section class="form--card"> 
+                <h3 class="headline"> Add New Question</h3> 
+            
+                <hr/>
+
+                <form class="form-data" data-js="form-data">
+                    <label class="form">
+                        <b> Enter your question in the text area below: </b>
+                        <textarea name="question" class="input input--area" minlength="0" maxlength="150" data-js="textarea"></textarea>
+                        <p class="counter" data-js="counter-wrapper">
+                            <span data-js="counter">150&nbsp;</span> characters left
+                        </p>
+                    </label>
+
+                    <label class="form">
+                        <b> Enter your Answer in the text area below: </b>
+                        <textarea name="answer" class="input input--area" minlength="0" maxlength="150" data-js="textarea"></textarea>
+                        <p class="counter" data-js="counter-wrapper">
+                            <span data-js="counter">150&nbsp;</span> characters left
+                        </p>
+                    </label>
+
+                    <label class="form">
+                        <b> Tags: </b>
+                        <input name="tags" type="text" aria-rowspan="5" aria-colspan="200"/>
+                    </label>
+
+                    <ul class="info" data-js="info" data-status="confirm"></ul>
+                    <button type="submit" class="button">
+                        <span>SUBMIT</span>
+                    </button>
+
+
+                </form>            
+
+                <div class="cards"></div>
+            </section>
+        </main>
+
+        <footer class="navigation">
+            <ul class="navigation--list">
+                <li class="navigation--item">
+                    <a class="navbar-link-home" href="./index.html">
+                        <i class="fa-solid fa-house fa-fw"></i>
+                    </a>
+                </li>
+                <li class="navigation--item">
+                    <a class="navbar-link-bookmarks" href="./bookmarks.html">
+                        <i class="fa-duotone fa-solid fa-bookmark fa-fw"></i>
+                    </a>
+                </li>
+                <li class="navigation--item">
+                    <a href="#" class="navbar-link-form">
+                        <i class="fa-sharp fa-solid fa-square-plus"></i>
+                    </a>
+                </li>
+                <li class="navigation--item">
+                    <a class="navbar-link-profile" href="./profile.html">
+                        <i class="fa-duotone fa-solid fa-user fa-fw"></i>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        <script src="./js/addNewCard.js" type="module" defer></script>
+        <script src="./js/script.js" type="module" defer></script>
+
+    </body>
+</html>

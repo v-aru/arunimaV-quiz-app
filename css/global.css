@@ -4,6 +4,13 @@
 
 :root {
     --background-color: darkblue;
+    --invalid: #c4412a;
+    --blue-color: #465d84;
+    --white-color: #ffffff;
+    --black-color: #282525;
+    --purple-color: #6904f7;
+
+    /* --font-family: "Nunito", sans-serif; */
 }
 
 body {

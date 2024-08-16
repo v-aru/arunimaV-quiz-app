@@ -1,3 +1,6 @@
+console.clear();
+
+
 //Toggle the Show and Hide Answer buttons
 document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.cards .card').forEach((card) => {
@@ -23,29 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 //Toggle the Bookmark button
 
-// const bookmarkButton = document.querySelector(".add-to-bookmark");
-
-// bookmarkButton.addEventListener("click", () => {
-//   const bookmarked = bookmarkButton.classList.contains("filled");
-
-//   bookmarked
-//     ? bookmarkButton.classList.remove("filled")
-//     : bookmarkButton.classList.add("empty");
-// });
-
-// document.querySelectorAll('.add-to-bookmark').forEach(button => {
-//   button.addEventListener('click', () => {
-//     const icon = button.querySelector('i');
-//     if(button.classList.contains('filled')) {
-//       button.classList.toggle('empty');
-//       icon.classList.toggle('fa-regular');
-//     } else {
-//       button.classList.toggle('filled');
-//       icon.classList.toggle('fa-solid');
-//     }
-//   });
-// });
-
 document.querySelectorAll('.add-to-bookmark').forEach(button => {
   button.addEventListener('click', () => {
     button.classList.toggle('filled');
@@ -55,4 +35,14 @@ document.querySelectorAll('.add-to-bookmark').forEach(button => {
     icon.classList.toggle('fa-solid');
     icon.classList.toggle('fa-regular');
   });
+});
+
+
+//Dark Mode toggle
+const themeSwitch = document.querySelector('.theme-switch');
+const body = document.body;
+const bodyElement = document.querySelector('[data-js="body"]');
+
+themeSwitch.addEventListener('click', () => {
+  body.classList.toggle('dark');   
 });

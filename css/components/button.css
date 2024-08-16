@@ -16,10 +16,12 @@
     padding: 10px 30px;
     text-transform: uppercase;
     transition: 0.4s;
+    background-color: var(--blue-color);
+    color: var(--white-color)
 }
 
 .show-answer:hover , .hide-answer:hover{ 
-    color: black;
+    color: white;
   }
 
 .show-answer::before, .hide-answer::before {
@@ -27,8 +29,8 @@
     position: absolute;
     width: 200px;
     height: 200px;
-    background:  #cba3e2;
-    color: aliceblue;
+    background:  #84b8f8;
+    color: white;
     transition: 0.4s;
     z-index: 0;
     border-radius: 500px;

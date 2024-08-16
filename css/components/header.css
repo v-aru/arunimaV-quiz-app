@@ -1,18 +1,17 @@
 header {
     align-content: center;
-    display: flex;   
+    display: flex;
 }
 
 h1 {
     text-align: center;
-    background-color: var(--background-color);
+    background-color: var(--header-background-color);
     color: lightseagreen;
     font-size: 3em;
-    width: auto;
-    margin: 20px ;
+    width: 90%;
+    margin: 20px;
     top: 0;
     left: 10px;
-    right:10px;
+    right: 10px;
     text-shadow: 4px 4px black;
-    position: absolute;
 }

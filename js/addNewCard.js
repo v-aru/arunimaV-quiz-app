@@ -76,7 +76,7 @@ const formValidation = (form) => {
     const isInput = data[i].classList.contains("input");
     if (isInput && !data[i].value) {
       data[i].classList.add("invalid");
-      showErrors(`<li>&#10006; <b>${data[i].name}</b> field is required</li>`);
+      showErrors(`<li><b>${data[i].name}</b> field is required</li>`);
       checker = false;
     }
   }
@@ -145,32 +145,74 @@ form.addEventListener("submit", addNewCard);
 
 
 //Toggle buttons for bookmark and Show/Hide answer
-document.addEventListener('DOMContentLoaded', () => {
-  const cards = document.querySelector('.cards');
-  const showAnswerButton = cards.querySelectorAll('.card .show-answer');
-  const hideAnswerButton = cards.querySelectorAll('.card .hide-answer');
-  const answerElement = cards.querySelectorAll('.card .answer');
 
-    showAnswerButton.addEventListener('click', () => {
-    answerElement.style.display = 'block';
-    showAnswerButton.style.display = 'none';
-    hideAnswerButton.style.display = 'block';
-  });
+const cardsContainer = document.querySelector('.cards');
+const observer = new MutationObserver((mutations) => {
+  mutations.forEach((mutation) => {
+    if (mutation.type === 'childList') {
+      mutation.addedNodes.forEach((node) => {
+        if (node.nodeType === Node.ELEMENT_NODE && node.classList.contains('card')) {
+          const newCard = node;
+          const showAnswerButton = newCard.querySelector('.card .show-answer');
+          const hideAnswerButton = newCard.querySelector('.card .hide-answer');
+          const answerElement = newCard.querySelector('.card .answer');
 
-  hideAnswerButton.addEventListener('click', () => {
-    answerElement.style.display = 'none';
-    showAnswerButton.style.display = 'block';
-    hideAnswerButton.style.display = 'none';
-  });
+            showAnswerButton.addEventListener('click', () => {
+            answerElement.style.display = 'block';
+            showAnswerButton.style.display = 'none';
+            hideAnswerButton.style.display = 'block';
+          });
 
-  document.querySelectorAll('.card .add-to-bookmark').forEach(button => {
-    button.addEventListener('click', () => {
-      button.classList.toggle('filled');
-      button.classList.toggle('empty');
-  
-      const icon = button.querySelector('i');
-      icon.classList.toggle('fa-solid');
-      icon.classList.toggle('fa-regular');
-    });
-  });
+          hideAnswerButton.addEventListener('click', () => {
+            answerElement.style.display = 'none';
+            showAnswerButton.style.display = 'block';
+            hideAnswerButton.style.display = 'none';
+          });
+
+          document.querySelectorAll('.card .add-to-bookmark').forEach(button => {
+            button.addEventListener('click', () => {
+              button.classList.toggle('filled');
+              button.classList.toggle('empty');
+          
+              const icon = button.querySelector('i');
+              icon.classList.toggle('fa-solid');
+              icon.classList.toggle('fa-regular');
+            });
+          });
+        }
+      })
+    }
+  })
 });
+
+observer.observe(cardsContainer, {childList: true});
+
+// document.addEventListener('DOMContentLoaded', () => {
+//   const cards = document.querySelector('.cards');
+//   const showAnswerButton = cards.querySelectorAll('.card .show-answer');
+//   const hideAnswerButton = cards.querySelectorAll('.card .hide-answer');
+//   const answerElement = cards.querySelectorAll('.card .answer');
+
+//     showAnswerButton.addEventListener('click', () => {
+//     answerElement.style.display = 'block';
+//     showAnswerButton.style.display = 'none';
+//     hideAnswerButton.style.display = 'block';
+//   });
+
+//   hideAnswerButton.addEventListener('click', () => {
+//     answerElement.style.display = 'none';
+//     showAnswerButton.style.display = 'block';
+//     hideAnswerButton.style.display = 'none';
+//   });
+
+//   document.querySelectorAll('.card .add-to-bookmark').forEach(button => {
+//     button.addEventListener('click', () => {
+//       button.classList.toggle('filled');
+//       button.classList.toggle('empty');
+  
+//       const icon = button.querySelector('i');
+//       icon.classList.toggle('fa-solid');
+//       icon.classList.toggle('fa-regular');
+//     });
+//   });
+// });

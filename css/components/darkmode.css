@@ -1,0 +1,17 @@
+/* --------------------------------------------------- */
+/* Dark Mode Toggle*/
+body.dark {
+    background-color: #121212; /* Darker background */
+}
+
+body.dark h3 , h2{
+    color: darkgrey;
+}
+
+
+
+body:not(.dark) {
+    background-color: var(--background-color); /* Light background */
+    color: #333; /* Dark text */
+}
+

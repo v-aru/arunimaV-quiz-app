@@ -3,7 +3,6 @@
     display: block;
 }
 
-
 .profile--card {
     display: flex;
     justify-content: space-between;
@@ -49,21 +48,27 @@
     padding: 1em;
 }
 
-
-
-
 h2, h3 {
-    border-bottom: 1px solid grey;
     transition: border-bottom 0.3s ease-out;
     align-self: center;
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid grey;
 }
 
-.profile--contact {
+.profile--contact, .contact-info {
     display: flex;
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
     font-family: sans-serif;
+}
+
+.qr-code, .links {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .location {
@@ -116,27 +121,26 @@ padding: 10px;
     align-items: center;
     flex-direction: column;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
-    background-color: white; 
-
-
+    background-color: white;
+    width: 70%;
+    border-radius: 20px;
 }
 
 /* --------------------------------------------------- */
-/* Dark Mode Toggle*/
-/* .dark-mode-toggle {
-background-color: #bac4c9;
-color: black;
+/* Add QR code in place of Contact links when page is larger than 768px wide */
+@media (max-width: 768px) {
+    .qr-code {
+      display: none;
+    }
 }
+@media  (min-width: 769px) {
+    .qr-code:hover {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+        transform: scale(1.1);
+        cursor: pointer; 
+    }
 
-.dark-mode-toggle {
-background-color: rgb(50, 51, 58);
-color: white;
-} */
-
-.theme-switch i {
-    transition: transform 0.3s ease-in-out;
-}
-
-.theme-switch .theme-switch i {
-    transform: rotate(180deg);
-}
+    .links {
+        display: none;
+    }
+} 

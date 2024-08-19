@@ -39,10 +39,14 @@ document.querySelectorAll('.add-to-bookmark').forEach(button => {
 
 
 //Dark Mode toggle
-const themeSwitch = document.querySelector('.theme-switch');
+const themeSwitchButton = document.querySelector('[data-js="theme-icon"]');
 const body = document.body;
-const bodyElement = document.querySelector('[data-js="body"]');
 
-themeSwitch.addEventListener('click', () => {
-  body.classList.toggle('dark');   
-});
+
+document.addEventListener ('DOMContentLoaded', () => {
+  themeSwitchButton.addEventListener('click', () => {
+    body.classList.toggle('dark');
+    themeSwitchButton.classList.toggle('fa-toggle-on');
+    themeSwitchButton.classList.toggle('fa-toggle-off');
+  });
+})

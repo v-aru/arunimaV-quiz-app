@@ -2,13 +2,13 @@
     display: flex;
     flex-wrap: wrap;
     gap: 40px;
+    justify-content: center;
   }
   
 
 .question-cards {
     align-self: center;
     flex-wrap: wrap;
-    gap: 40px;
     margin: 0 0 0 0;
     padding: 0px 0px;
 

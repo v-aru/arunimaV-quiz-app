@@ -1,7 +1,11 @@
 /*Profile page*/
-.profile--page {
-    display: block;
+.main-container {
+    display: flex;
+    flex: 1;
+    overflow: auto;
+    margin: 50px;
 }
+
 
 .profile--card {
     display: flex;
@@ -122,7 +126,7 @@ padding: 10px;
     flex-direction: column;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
     background-color: white;
-    width: 70%;
+    width: 50%;
     border-radius: 20px;
 }
 

@@ -3,15 +3,13 @@
 }
 
 :root {
-    --header-background-color: darkblue;
+    --header-background-color: rgb(113, 0, 139);
     --invalid: #c4412a;
     --blue-color: #465d84;
     --white-color: #ffffff;
     --black-color: #282525;
     --purple-color: #6904f7;
-    --background-color: lightcyan
-
-    /* --font-family: "Nunito", sans-serif; */
+    --background-color: #e8dcfc;
 }
 
 body {
@@ -19,9 +17,8 @@ body {
     padding: 0;
     font-family: sans-serif;
     background-color: var(--background-color);
-    /*background-image: url('../images/quizbackground.png'); */
-    background-size: fit;
-
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 .main-content {
@@ -31,5 +28,5 @@ body {
     align-items: center;
     padding-top: 0px;
     margin: 30px;
-    overflow: hidden;    
+    overflow: hidden;  
 }
